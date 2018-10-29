@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>西游记</title>
+	<style>
+		body,html{
+			height: 100%;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		.main {
+
+			height: 100%;
+			width: 100%;
+			background-size: contain;
+			overflow: hidden;
+			position: relative;
+		}
+		.main ul{
+    			
+    			width: 3920px;
+    			position: absolute;
+    			height: 100%;
+    			left: 0;
+    			top: 0;
+    			animation: bgz 60s linear infinite;
+			
+		}
+		@keyframes bgz{
+			from{
+				left: 0%;
+			}
+			to{
+				left: 1920px;
+			}
+		}
+		.main ul li{
+			width: 100%;
+			height: 100%;
+			float: left;
+			background: url("./images/dtp.png");
+			margin-left: -2000px;
+		}
+		.sun,.zhu{
+			z-index: 1;
+			width: 200px;
+			height: 180px;
+
+
+		}
+		.sun{
+			top: 55%;
+			left: 20%;
+			background-image: url("./images/wk.png");
+			position: absolute;
+			animation: wkz 1s steps(8) infinite;
+			
+		}
+		@keyframes wkz {
+			to {
+				background-position: -1600px 0;
+			}
+		}
+		
+		.zhu{
+			top: 55%;
+			left: 35%;
+			background-image: url("./images/bj.png");
+			position: absolute;
+			animation: bjz 1s steps(8) infinite;
+			
+		}
+		@keyframes bjz {
+			to {
+				background-position: -1600px 0;
+			}
+		}
+
+		.tb{
+			z-index: 1;
+			width: 170px;
+			height: 240px;
+			
+			position: absolute;
+			top: 50%;
+			left:50%;
+			animation: tbz 1s steps(8) infinite;
+			background-image: url("./images/ts.png");
+		}
+		@keyframes tbz {
+			to {
+				background-position: -1360px 0;
+			}
+		}
+		.sha{
+			z-index: 1;
+			width: 210px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left:65%;
+			animation: shaz 1s steps(8) infinite;
+			background: url("./images/ss.png");
+		}
+		@keyframes shaz {
+			to {
+				background-position: -1680px 0;
+			}
+		}
+		
+
+
+
+	</style>
+</head>
+<body>
+	<div class="sun"></div>
+	<div class="zhu"></div>
+	<div class="tb"></div>
+	<div class="sha"></div>
+	<div class="main">
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+
+	</div>
+	
+</body>
+</html>
